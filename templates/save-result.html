@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <h3>Register Successfully</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">ชื่อ</th>
+                <th scope="col">นามสกุล</th>
+                <th scope="col">ที่อยู่</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ inputFirstname }}</td>
+                <td>{{ inputLastname }}</td>
+                <td>{{ inputAddress }}</td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock%}

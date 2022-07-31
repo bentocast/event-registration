@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <form class="row g-3" action="save-result" method="POST">
+        {% csrf_token %}
+        <div class="col-md-6">
+            <label for="inputFirstname1" class="form-label">Firstname</label>
+            <input type="text" class="form-control" name="inputFirstname">
+        </div>
+        <div class="col-md-6">
+            <label for="inputLastname1" class="form-label">Lastname</label>
+            <input type="text" class="form-control" name="inputLastname">
+        </div>
+        <div class="col-12">
+            <label for="inputAddress1" class="form-label">Address</label>
+            <input type="text" class="form-control" name="inputAddress">
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="reset" class="btn btn-secondary">Reset</button>
+        </div>
+    </form>
+{% endblock%}
